@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #form 
+    {
+        margin: auto auto;
+        border: 2px black double;
+        padding: 70px;
+        width: 255px;
+        height: auto;
+        text-align: left;
+    }
+</style>
+<body>
+    <h1 style = "text-align: center;">AdOpt: Optimised Fit for YouTube Ads</h1>
+    <p style = "text-align: center;">CSE-6363: MACHINE LEARNING<br>Project Demo<br>By Aakash Mahindreker (1002027304)</p>
+    <div id = "form">
+        <form action = " {{ url_for("inputs") }}" method = "post">
+            <label for="Query">Query:</label>
+            <input style="width: 200px;" type ="text" id = "query" name="query" placeholder = "Your Advertisement Category"><br><br>
+            <label for="nov">Number of videos:</label>
+            <input style="width: 125px;" type ="text" id = "nov" name="nov" placeholder = ""><br><br>
+            <label for="mlfc">Minimum likes on comments:</label>
+            <input style="width: 52px;" type ="text" id = "mlfc" name="mlfc" placeholder = ""><br><br>
+            <center><button type = "submit"> Get Results </button></center>    
+        </form>
+    </div>
+</body>
+</html>
